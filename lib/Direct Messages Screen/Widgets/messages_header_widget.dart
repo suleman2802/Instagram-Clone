@@ -4,7 +4,7 @@ class MessagesHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 16),
+      margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -14,7 +14,7 @@ class MessagesHeaderWidget extends StatelessWidget {
                 .textTheme
                 .navTitleTextStyle,
           ),
-          Text(
+          const Text(
             "Requests",
             style: TextStyle(
               color: CupertinoColors.activeBlue,

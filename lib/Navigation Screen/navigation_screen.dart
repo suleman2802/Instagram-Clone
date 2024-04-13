@@ -54,7 +54,7 @@ class NavigationScreen extends StatelessWidget {
         }
       },
       tabBar: CupertinoTabBar(
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.home),
             // label: 'Home',

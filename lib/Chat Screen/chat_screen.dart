@@ -58,10 +58,10 @@ class ChatScreen extends StatelessWidget {
       // ),
       child: SafeArea(
         child: Column(children: [
-          ChatScreenHeader(),
+          ChatScreenHeader(true),
           Expanded(
             child: Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: ListView.builder(
                 reverse: true,
                 itemCount: 10,
@@ -73,7 +73,7 @@ class ChatScreen extends StatelessWidget {
               ),
             ),
           ),
-          TextFieldWidget(),
+          const TextFieldWidget(),
         ]),
       ),
     );

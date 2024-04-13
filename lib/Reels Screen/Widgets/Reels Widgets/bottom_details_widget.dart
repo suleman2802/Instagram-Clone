@@ -19,7 +19,7 @@ class BottomDetailsWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               ProfileImageWidget(50),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Text(
@@ -31,13 +31,13 @@ class BottomDetailsWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             description,
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Container(

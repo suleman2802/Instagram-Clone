@@ -10,14 +10,14 @@ class MessagesListWidget extends StatelessWidget {
       itemCount: 7,
       itemBuilder: (context, index) => CupertinoListTile(
         leadingSize: 75,
-        padding: EdgeInsets.symmetric(horizontal: 0, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 8),
         title: Text(
           "profile name",
           style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
         ),
         leading: ProfileImageWidget(70),
         trailing: CupertinoButton(
-          child: Icon(CupertinoIcons.camera),
+          child: const Icon(CupertinoIcons.camera),
           onPressed: () {},
         ),
         onTap: () => Navigator.push(

@@ -6,12 +6,12 @@ class ExploreScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(
+      navigationBar: const CupertinoNavigationBar(
         middle: SizedBox(height: 200,child: CupertinoSearchTextField()),
       ),
       child: GridView.builder(
         itemCount: 5,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3, crossAxisSpacing: 4.0, mainAxisSpacing: 4.0),
         itemBuilder: (BuildContext context, int index) {
           return Image.network(

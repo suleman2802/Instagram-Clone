@@ -1,14 +1,18 @@
 import 'package:flutter/cupertino.dart';
-import 'package:instagram_clone/General%20Widgets/profile_image_widget.dart';
-import 'package:instagram_clone/Home%20Screen/home_screen.dart';
+import 'package:instagram_clone/Direct%20Messages%20Screen/direct_messages_screen.dart';
+
+import '../../General Widgets/profile_image_widget.dart';
+import '../../Home Screen/home_screen.dart';
 
 class ChatScreenHeader extends StatelessWidget {
-  const ChatScreenHeader({super.key});
+  bool isChatScreen;
+
+  ChatScreenHeader(this.isChatScreen);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 2),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 2),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -16,7 +20,12 @@ class ChatScreenHeader extends StatelessWidget {
             children: [
               CupertinoButton(
                 child: Icon(CupertinoIcons.arrow_left),
-                onPressed: () => Navigator.of(context).push(CupertinoPageRoute(builder: (context) => HomeScreen(),)),
+                onPressed: () => Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) =>
+                        isChatScreen ? DirectMessagesScreen() : HomeScreen(),
+                  ),
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,7 +36,8 @@ class ChatScreenHeader extends StatelessWidget {
                   ),
                   Text(
                     "profile name",
-                    style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
+                    style:
+                        CupertinoTheme.of(context).textTheme.navTitleTextStyle,
                   ),
                 ],
               ),

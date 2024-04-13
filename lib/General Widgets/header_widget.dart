@@ -48,9 +48,9 @@ class HeaderWidget extends StatelessWidget {
             ? Row(
                 children: [
                   CupertinoButton(
-                      child: Icon(CupertinoIcons.heart), onPressed: () {}),
+                      child: const Icon(CupertinoIcons.heart), onPressed: () {}),
                   CupertinoButton(
-                    child: Icon(CupertinoIcons.location_fill),
+                    child: const Icon(CupertinoIcons.location_fill),
                     onPressed: () => Navigator.of(context).pushReplacement(
                         CupertinoPageRoute(
                             builder: (context) => DirectMessagesScreen())),
@@ -61,7 +61,7 @@ class HeaderWidget extends StatelessWidget {
                 ],
               )
             : CupertinoButton(
-                child: Icon(CupertinoIcons.camera), onPressed: () {}),
+                child: const Icon(CupertinoIcons.camera), onPressed: () {}),
       ],
     );
   }

@@ -6,8 +6,8 @@ class TextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoTextField(
-      suffix: Padding(
-        padding: const EdgeInsets.all(8.0),
+      suffix: const Padding(
+        padding: EdgeInsets.all(8.0),
         child: Row(
           children: [
             Icon(

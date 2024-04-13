@@ -19,17 +19,17 @@ class ProfileScreen extends StatelessWidget {
           child: CustomScrollView(
             slivers: <Widget>[
               SliverPadding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 sliver: SliverList(
                   delegate: SliverChildListDelegate(
                     [
                       ProfileHeaderWidget(),
                       ProfileDetailWidget(),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       ProfileButtonWidget(),
-                      SizedBox(height: 15),
+                      const SizedBox(height: 15),
                       DiscoverPeopleWidget(),
-                      SizedBox(height: 20,),
+                      const SizedBox(height: 20,),
                       PostGridWidget(),
                     ],
                   ),

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 class MessageBubble extends StatelessWidget {
-  final _message;
-  final _isMe;
+  final String _message;
+  final bool _isMe;
   final Key key;
   MessageBubble(this._isMe,this._message,this.key);
 
